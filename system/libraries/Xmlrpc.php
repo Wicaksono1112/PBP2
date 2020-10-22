@@ -1223,7 +1223,7 @@ class XML_RPC_Message extends CI_Xmlrpc
 				print "---END HEADERS---\n\n";
 			}
 
-			print "---DATA---\n".htmlspecialchars($data)."\n---END DATA---\n\n---PARSED---\n";
+			echo "---DATA---\n".htmlspecialchars($data)."\n---END DATA---\n\n---PARSED---\n";
 			var_dump($this->xh[$pname]['value']);
 			print "\n---END PARSED---</pre>";
 		}
