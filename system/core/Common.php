@@ -265,7 +265,7 @@ if ( ! function_exists('get_config'))
 			if ( ! isset($config) OR ! is_array($config))
 			{
 				set_status_header(503);
-				echo 'Your config file does not appear to be formatted correctly.';
+				return 'Your config file does not appear to be formatted correctly.';
 				exit(3); // EXIT_CONFIG
 			}
 		}
