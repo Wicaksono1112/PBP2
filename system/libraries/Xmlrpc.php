@@ -1211,19 +1211,19 @@ class XML_RPC_Message extends CI_Xmlrpc
 		// Display XML content for debugging
 		if ($this->debug === TRUE)
 		{
-			echo '<pre>';
+			return '<pre>';
 
 			if (count($this->xh[$pname]['headers']) > 0)
 			{
 				print "---HEADERS---\n";
 				foreach ($this->xh[$pname]['headers'] as $header)
 				{
-					echo $header."\n";
+					return $header."\n";
 				}
 				print "---END HEADERS---\n\n";
 			}
 
-			echo "---DATA---\n".htmlspecialchars($data)."\n---END DATA---\n\n---PARSED---\n";
+			return "---DATA---\n".htmlspecialchars($data)."\n---END DATA---\n\n---PARSED---\n";
 			var_dump($this->xh[$pname]['value']);
 			print "\n---END PARSED---</pre>";
 		}
