@@ -79,8 +79,8 @@
                     <label>Level</label>
                     <select id="level" name="level" class="form-control" required>
                         <option value="" disabled>Pilih level</option>
-                        <option value="admin" <?php if ($result->level == "admin") echo "selected" ?>>Admin</option>
-                        <option value="manajer" <?php if ($result->level == "admin") echo "selected" ?>>Manajer</option>
+                        <option value="admin" <?php if ($result->level == "admin") return "selected" ?>>Admin</option>
+                        <option value="manajer" <?php if ($result->level == "admin") return "selected" ?>>Manajer</option>
                     </select>
                     </div>
                 </form>
