@@ -49,7 +49,7 @@
 							Login
 						</button>
 <?php if(isset($message)){?>
-						<div class="login100-form m-t-16 alert alert-danger" role="alert"><?= $message?></div>
+						<div class="login100-form m-t-16 alert alert-danger" role="alert"><?php return $message?></div>
 <?php
 }?>
 					</div>
