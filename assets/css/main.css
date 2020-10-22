@@ -1,17 +1,16 @@
 @font-face {
   font-family: Ubuntu-Regular;
-  src: url('../fonts/ubuntu/Ubuntu-Regular.ttf'); 
+  src: url('../fonts/ubuntu/Ubuntu-Regular.ttf');
 }
 
 @font-face {
   font-family: Ubuntu-Bold;
-  src: url('../fonts/ubuntu/Ubuntu-Bold.ttf'); 
+  src: url('../fonts/ubuntu/Ubuntu-Bold.ttf');
 }
 
-
 * {
-	margin: 0px; 
-	padding: 0px; 
+	margin: 0px;
+	padding: 0px;
 	box-sizing: border-box;
 }
 
@@ -69,7 +68,7 @@ textarea {
 }
 
 textarea:focus, input:focus {
-  border-color: transparent !important;
+border-color: transparent !important;
 }
 
 input::-webkit-input-placeholder { color: #8f8fa1;}
