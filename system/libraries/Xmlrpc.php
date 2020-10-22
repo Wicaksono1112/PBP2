@@ -1758,7 +1758,7 @@ class XML_RPC_Values extends CI_Xmlrpc
 	{
 		if ($this->mytype !== 0)
 		{
-			print '<strong>XML_RPC_Values</strong>: already initialized as a ['.$this->kindOf().']<br />';
+			echo '<strong>XML_RPC_Values</strong>: already initialized as a ['.$this->kindOf().']<br />';
 			return 0;
 		}
 
