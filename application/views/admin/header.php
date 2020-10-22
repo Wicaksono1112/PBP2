@@ -33,7 +33,7 @@
     <div id="wrapper">
         <!-- Sidebar -->
         <ul class="sidebar navbar-nav">
-            <li class="nav-item <?php if($title == "Dashboard") echo "active"?>">
+            <li class="nav-item <?php if($title == "Dashboard") return "active"?>">
                 <a class="nav-link" href="<?= base_url() ?>admin/dashboard">
                     <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
                     <i class="fa fa-home" aria-hidden="true"></i>
@@ -43,31 +43,31 @@
             </li>
 <?php
 if($this->session->userdata("level") == "admin"){?>
-            <li class="nav-item <?php if($title == "Kategori") echo "active"?>">
+            <li class="nav-item <?php if($title == "Kategori") return "active"?>">
                 <a class="nav-link" href="<?= base_url("admin/kategori") ?>">
                     <i class="fa fa-tag" aria-hidden="true"></i>
                     <span>Kategori</span></a>
             </li>
-            <li class="nav-item <?php if($title == "Sub Kategori") echo "active"?>">
+            <li class="nav-item <?php if($title == "Sub Kategori") return "active"?>">
                 <a class="nav-link" href="<?= base_url("admin/sub_kategori")?>">
                     <i class="fa fa-tags" aria-hidden="true"></i>
                     <span>Sub Kategori</span></a>
             </li>
 <?php }?>
-            <li class="nav-item <?php if($title == "Produk") echo "active"?>">
+            <li class="nav-item <?php if($title == "Produk") return "active"?>">
                 <a class="nav-link" href="<?= base_url() ?>admin/produk">
                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                     <span>Produk</span></a>
             </li>
 <?php
 if($this->session->userdata("level") == "manajer"){?>
-            <li class="nav-item <?php if($title == "Rekap Produk") echo "active"?>">
+            <li class="nav-item <?php if($title == "Rekap Produk") return "active"?>">
                 <a class="nav-link" href="<?= base_url() ?>admin/rekap_produk">
                     <i class="fa fa-table" aria-hidden="true"></i>
                     <span>Rekap Produk</span></a>
             </li>
 <?php }?>
-            <li class="nav-item <?php if($title == "Pegawai") echo "active"?>">
+            <li class="nav-item <?php if($title == "Pegawai") return "active"?>">
                 <a class="nav-link" href="<?= base_url("admin/pegawai") ?>">
                     <i class="fa fa-user" aria-hidden="true"></i>
                     <span>Pegawai</span></a>
